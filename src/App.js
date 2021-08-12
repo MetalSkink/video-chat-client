@@ -14,14 +14,12 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'center',
       alignItems: 'center',
       width: '600px',
+      opacity: '0.8',
       border: '2px solid black',
   
       [theme.breakpoints.down('xs')]: {
         width: '90%',
       },
-    },
-    image: {
-      marginLeft: '15px',
     },
     wrapper: {
       display: 'flex',
@@ -37,7 +35,7 @@ export const App = () => {
     return (
         <div className={classes.wrapper}>
             <AppBar className={classes.appBar} position="static" color="inherit">
-                <Typography variant="h2" align="center">Video Chat by Xavier Ortega</Typography>
+                <Typography variant="h3" align="center">Video Chat por Xavier Ortega</Typography>
             </AppBar>
             <VideoPlayer/>
             <Options>
