@@ -93,7 +93,9 @@ const ContextProvider = ({ children }) =>{
             leaveCall,
             answerCall
         }}>
-
+            {children}
         </SocketContext.Provider>
     )
 }
+
+export {ContextProvider, SocketContext };
